@@ -1,0 +1,213 @@
+@media (min-width: 375px) and (max-height: 450px) {
+  .nav-links {
+    top: -800px;
+  }
+}
+
+@media (max-width: 700px) {
+  html {
+    font-size: 62.5%;
+  }
+  body {
+    margin: auto;
+  }
+  main {
+    display: block;
+  }
+  section {
+    text-align: center;
+    align-items: center;
+  }
+  header {
+    position: fixed;
+    display: block;
+  }
+  nav.navbar {
+    margin: auto auto 2em auto;
+    z-index: 1;
+    border: 2px;
+    position: sticky;
+    padding: 1em;
+  }
+  #bank-logo {
+    width: 100%;
+    height: auto;
+  }
+  .nav-links {
+    background-color: hsl(0, 0%, 100%);
+    position: absolute;
+    top: -850px;
+    left: 50%;
+    width: 80%;
+
+    border-radius: 0.5em;
+    transform: translate(-50%, 50%);
+  }
+  .nav-links ul {
+    width: 100%;
+    margin-top: 1em;
+  }
+  .nav-links ul li {
+    font-size: 2rem;
+    text-align: center;
+    display: block;
+    height: 13vh;
+  }
+  .nav-links ul a button {
+    display: block;
+    margin: auto;
+  }
+
+  .nav-links ul li:hover {
+    border-bottom: 0.2em solid hsl(220, 16%, 96%);
+  }
+  #hamberger {
+    display: block;
+  }
+  /* navigation complete */
+
+  /*home section starts  */
+  .row {
+    flex-direction: column;
+    font-size: 1rem;
+  }
+  .home-col {
+    margin: 30em 0 0 0;
+    text-align: center;
+  }
+  .home-col h1,
+  .home-col p {
+    margin: 0 0 0.5em;
+    text-align: center;
+    line-height: 2rem;
+  }
+  .home-col button {
+    margin: 1em auto auto;
+  }
+  .img {
+    width: 100%;
+    height: auto;
+  }
+  .img.one,
+  .img.two {
+    top: 16%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+  }
+  .img.two {
+    width: 300px;
+  }
+  /* navigation ends here */
+
+  /*  about us section*/
+  .about {
+    margin-top: -21em;
+  }
+  #about-intro h1 {
+    font-size: 2rem;
+  }
+  #about-intro p {
+    line-height: 1.5em;
+    width: 63%;
+    font-size: 1rem;
+  }
+  .about-col h3 {
+    margin: 1em auto;
+    font-size: 2rem;
+  }
+  .about-col p {
+    margin: 1em 0.1em 1em 2em;
+    width: 80%;
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+  }
+  .about-col img {
+    width: 20%;
+    margin: auto auto 2em auto;
+    display: block;
+  }
+  /* about section ends here */
+
+  /* blogs section starts here */
+
+  .blog-col {
+    margin: auto;
+  }
+  .blog-img {
+    width: 100%;
+    margin: auto;
+    display: block;
+  }
+
+  /* blog section ends here */
+
+  /* footer */
+  .footer {
+    width: 100%;
+    margin: auto;
+    flex-direction: column;
+  }
+  .social-app {
+    place-items: center;
+  }
+  .social-app figure img,
+  .social-app figcaption img {
+    width: auto;
+    margin: auto 1em;
+  }
+  nav.footer-nav {
+    flex-direction: column;
+    text-align: center;
+    margin: auto;
+  }
+  nav.footer-nav ul {
+    width: 50%;
+    margin: auto;
+    display: contents;
+  }
+  nav.footer-nav ul li {
+    margin: 1em 3em;
+  }
+  nav.footer-nav ul li a {
+    font-size: 1.5rem;
+  }
+  .copyright {
+    display: grid;
+    place-items: center;
+  }
+  .copyright a {
+    margin: 1em 0em;
+    display: block;
+  }
+  .copyright a p {
+    margin: 1em 0;
+    font-size: 1.5rem;
+  }
+
+  /* utility */
+  p {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 701px) and (max-width: 824px) {
+  .nav-links ul li {
+    margin: 0.2em;
+    padding: 0.1em;
+  }
+  .nav-links ul a button {
+    display: none;
+  }
+}
+
+@media (min-width: 701px) and (max-width: 1200px) {
+  nav.footer-nav {
+    display: block;
+    margin: auto;
+  }
+
+  nav.footer-nav ul li {
+    margin: 0.1em;
+  }
+}
