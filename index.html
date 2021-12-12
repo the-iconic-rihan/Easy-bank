@@ -13,7 +13,7 @@
   <!-- linking css -->
   <link rel="stylesheet" href="./style/style.css" type="text/css">
   <link rel="stylesheet" href="./style/responsive.css" type="text/css">
-  <title>Frontend Mentor | Easybank landing page</title>
+  <title>Easybank landing page</title>
 
   <!-- liinking the font awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
@@ -62,7 +62,9 @@
 
 
     </nav>
-
+    <span id="time">
+      The time is : <span id="time1"></span>
+    </span>
   </header>
 
   <!------------------------------------------------the header section ends here --------------------------------------------------------->
@@ -76,8 +78,8 @@
     <section class="home section" id="home">
 
       <div class="row">
-
         <article class="home-col">
+
           <h1 class="heading">Next generation digital banking</h1>
 
           <p class="info">Take your financial life online. Your Easybank account</br> will be a one-stop-shop
@@ -98,7 +100,7 @@
 
     <!-- the about section start here -->
 
-    <section id="about" class="about">
+    <section id="about" class="about section">
       <div class="about-col" id="about-intro">
         <h1>Why choose Easybank?</h1>
         <p> We leverage Open Banking to turn your bank account into your financial hub.<br> Control
@@ -139,7 +141,7 @@
       </div>
     </section>
 
-    <section class="blog" id="blog">
+    <section class="blog section" id="blog">
       <h1> Latest Articles </h1>
       <div class="row">
         <div class="blog-col">
@@ -246,18 +248,14 @@
 
 
 
-  <!-- 
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
-  </div> -->
+
   <script>
     let section = document.getElementById("home");
     let cross = document.getElementById("cross");
     let bars = document.getElementById("hamberger");
     var navLinks = document.getElementById("nav-links");
     function showMenu() {
-      navLinks.style.top = "-15em";
+      navLinks.style.top = "-12em";
       navLinks.style.transition = "0.9s"
       bars.style.display = "none";
       cross.style.display = "block";
@@ -269,9 +267,24 @@
       cross.style.display = "none";
       navLinks.style.transition = "0.9s"
       bars.style.display = "block";
+      bars.style.zIndex = "1";
+      bars.style.margin ="0 0 1rem 0";
       section.style.display = "block";
 
     }
+
+
+    function displayTime() {
+
+      let time = new Date();
+      // console.log(time.het);
+      let exactTime = time.getHours() + ":" + time.getMinutes() + ":" + time.getSeconds();
+      // console.log(exactTime);
+      document.getElementById("time1").innerHTML = exactTime;
+    }
+    setInterval(displayTime, 1000);
+
+
   </script>
 </body>
 
