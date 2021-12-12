@@ -13,11 +13,7 @@
   <!-- linking css -->
   <link rel="stylesheet" href="./style/style.css" type="text/css">
   <link rel="stylesheet" href="./style/responsive.css" type="text/css">
-<<<<<<< HEAD
-  <title>Easybank landing page</title>
-=======
   <title> Easybank landing page</title>
->>>>>>> 778cf9e63d921521989c53cf6f3ca29b8ecf40bf
 
   <!-- liinking the font awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
@@ -53,7 +49,7 @@
           <li><a href="#about">About</a></li>
           <li><a href="#contact">Contact</a></li>
           <li><a href="#blog">Blog</a></li>
-          <!-- <li><a href="#career">Careers</a></li> -->
+  
           <a href="#">
             <button type="button" class="btn btn-primary"> Request Invite</button>
           </a>
@@ -263,16 +259,17 @@
       navLinks.style.transition = "0.9s"
       bars.style.display = "none";
       cross.style.display = "block";
+      cross.style.zIndex="1";
+      cross.style.margin="0 0 1rem 0";
       section.style.display = "none";
 
     }
     function hideMenu() {
-      navLinks.style.top = "-950px";
+      navLinks.style.top = "-1000px";
       cross.style.display = "none";
       navLinks.style.transition = "0.9s"
       bars.style.display = "block";
-      document.getElementsByClassName("fa-times").style.zIndex="1";
-      bars.style.margin="0 0 1rem 0";
+     
       section.style.display = "block";
 
     }
