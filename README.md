@@ -18,7 +18,6 @@ To access the website just visit 👉👉👉 "https://the-iconic-rihan.github.i
 ## Srceenshot 📸�:- 
 ![image](https://user-images.githubusercontent.com/68491627/145712572-59a9cb54-453e-40fc-a49e-c53d391bb90b.png)
 ![image](https://user-images.githubusercontent.com/68491627/145712377-61509290-54e2-4fac-98e0-98ee205d3229.png)
-![image](https://user-images.githubusercontent.com/68491627/145712397-ff635cd5-4e8c-48c1-9580-102086d8607f.png)
 
 ## Mobile view
 ![image](https://user-images.githubusercontent.com/68491627/145712439-5df8a519-bcc8-473a-82ef-b283c1010086.png)
